@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    font-size: 30px;
+    font-family: Volkhov;
+    font-weight: 700;
+    color: #000000;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    p {
+      font-family: Google Sans;
+      font-weight: 400;
+      font-size: 22px;
+      color: #212832;
+    }
+    .sign {
+      width: 135px;
+      height: 53px;
+      border-radius: 7px;
+      font-family: Google Sans;
+      font-size: 22px;
+      color: #212832;
+      background-color: #fff;
+    }
+    h6 {
+      font-family: Google Sans;
+      font-weight: 500;
+      font-size: 22px;
+      img {
+        padding-left: 9px;
+      }
+    }
+  }
+}
