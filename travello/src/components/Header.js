@@ -1,5 +1,6 @@
-import style from "../styles/Header.module.css";
+import style from "../styles/Header.module.scss";
 import language from "../assents/language.svg";
+
 function Header() {
   return (
     <>

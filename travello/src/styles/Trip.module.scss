@@ -1,0 +1,27 @@
+.tripItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 28px;
+  max-width: 525px;
+  img {
+    display: block;
+  }
+  .right {
+    h4 {
+      text-align: start;
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 22px;
+      color: #5e6282;
+    }
+    p {
+      margin-top: 7px;
+      text-align: start;
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 22px;
+      color: #5e6282;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import style from "../styles/Offer.module.css";
+import style from "../styles/Offer.module.scss";
 
 function Offer({ el }) {
   return (
