@@ -3,6 +3,9 @@ import Offer from "./components/Offer.js";
 import Destinations from "./components/Destinations.js";
 import Trip from "./components/Trip.js";
 
+import hero from "./assents/herowbag.png";
+import playButton from "./assents/playButton.svg";
+
 import tv from "./assents/tv.svg";
 import mic from "./assents/mic.svg";
 import plane from "./assents/plane.svg";
@@ -23,6 +26,7 @@ import building from "./assents/building.svg";
 import heart from "./assents/heart.svg";
 
 import Header from "./components/Header";
+
 function App() {
   const arrayObj = [
     { src: tv, title: "Calculated Weather", info: "Built Wicket longer admire do barton vanity itself do in it." },
@@ -75,9 +79,29 @@ function App() {
     <>
       <Header />
       <main>
+        <section className={style.hero}>
+          <div className={style.leftSide}>
+            <h3>Destinations around the world</h3>
+            <h1>Travel, enjoy and live a new and full life</h1>
+            <p>
+              Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed
+              listening. Park gate sell they west hard for the.
+            </p>
+            <div className={style.buttonGroup}>
+              <button className={style.btnMore}>Find out more</button>
+              <div className={style.btnDemo}>
+                <div className={style.img} />
+                Play Demo
+              </div>
+            </div>
+          </div>
+          <div className={style.rightSide}>
+            <img src={hero}></img>
+          </div>
+        </section>
         <section className={style.offer}>
-          <p className={style.center}>CATEGORY</p>
-          <h2 className={style.center}>We Offer Best Services</h2>
+          <p>CATEGORY</p>
+          <h2>We Offer Best Services</h2>
           <div className={style.offerWrap}>
             {arrayObj.map((el, index) => (
               <Offer key={index} el={el} />
@@ -85,8 +109,8 @@ function App() {
           </div>
         </section>
         <section className={style.destinations}>
-          <p className={style.center}>Top Selling</p>
-          <h2 className={style.center}>Top Destinations</h2>
+          <p>Top Selling</p>
+          <h2>Top Destinations</h2>
           <div className={style.destinationsWrap}>
             {ArrayDestinations.map((el, index) => (
               <Destinations key={index} el={el} />
@@ -112,6 +136,29 @@ function App() {
             <img className={style.icons} src={send}></img>
             <p className={style.bottom}>24 people going</p>
             <></>
+          </div>
+        </section>
+        <section className={style.testimonials}>
+          <p>Testimonials</p>
+          <div className={style.testimonialsWrapper}>
+            <div className={style.testimonialsLeft}>
+              <h2>What people say about Us.</h2>
+            </div>
+            <div className={style.testimonialsRight}>
+              <div className={style.arrowContainer}>
+                <div className={style.topArrow}></div>
+                <div className={style.bottomArrow}></div>
+              </div>
+              <div className={style.textContainer}>
+                <p>
+                  “On the Windows talking painted pasture yet its <br /> express parties use. Sure last upon he same as{" "}
+                  <br />
+                  knew next. Of believed or diverted no.”
+                </p>
+                <h5>Mike taylor</h5>
+                <h6>Lahore, Pakistan</h6>
+              </div>
+            </div>
           </div>
         </section>
       </main>

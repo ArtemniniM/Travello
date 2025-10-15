@@ -1,36 +1,134 @@
-p {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 24px;
-  color: #5e6282;
-}
-
-h2 {
-  font-family: Volkhov;
-  font-weight: 700;
-  font-size: 66px;
-  color: #14183e;
-}
-
-.center {
-  text-align: center;
-}
-
-.offerWrap {
+.hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 97px;
-  margin-bottom: 207px;
+  justify-content: space-between;
+  gap: 70px;
+  margin: 93px 0 173px;
+  .leftSide {
+    max-width: 725px;
+    h3 {
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #df6951;
+    }
+    h1 {
+      font-family: Volkhov;
+      font-weight: 700;
+      font-size: 100px;
+      line-height: 118.38px;
+      letter-spacing: -4%;
+      color: #181e4b;
+      padding: 32px 0 39px;
+    }
+    p {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 39.9px;
+      color: #5e6282;
+      padding-bottom: 45px;
+    }
+
+    .buttonGroup {
+      display: flex;
+      gap: 58px;
+      align-items: center;
+    }
+
+    .btnMore {
+      width: 226px;
+      height: 80px;
+      border: none;
+      border-radius: 13px;
+      background-color: #f1a501;
+      box-shadow: 0px 26.6px 46.55px 0px #f1a50126;
+      font-family: Google Sans;
+      font-weight: 500;
+      font-size: 24px;
+      text-align: center;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btnMore:hover {
+      background-color: #d88f00;
+    }
+
+    .btnDemo {
+      width: 280px;
+      height: 69px;
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 22px;
+      color: #686d77;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .img {
+        width: 150px;
+        height: 150px;
+        background-image: url(../assents/playButton.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+      }
+    }
+  }
+  .rightSide {
+  }
 }
 
-.destinationsWrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 97px;
-  margin-bottom: 207px;
-  margin-top: 80px;
+.offer {
+  p {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    color: #5e6282;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: Volkhov;
+    font-weight: 700;
+    font-size: 66px;
+    color: #14183e;
+    text-align: center;
+  }
+  .offerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 97px;
+    margin-bottom: 207px;
+  }
+}
+.destinations {
+  p {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    color: #5e6282;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: Volkhov;
+    font-weight: 700;
+    font-size: 66px;
+    color: #14183e;
+    text-align: center;
+  }
+  .destinationsWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 97px;
+    margin-bottom: 207px;
+    margin-top: 80px;
+  }
 }
 
 .trip {
@@ -39,6 +137,21 @@ h2 {
   align-items: center;
   .leftSide {
     max-width: 680px;
+    p {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 23.94px;
+      color: #5e6282;
+    }
+    h2 {
+      padding: 19px 0 42px;
+      font-family: Volkhov;
+      font-weight: 700;
+      font-size: 66.51px;
+      line-height: 100%;
+      text-transform: capitalize;
+      color: #14183e;
+    }
     .tripWrap {
       display: flex;
       flex-direction: column;
@@ -97,6 +210,95 @@ h2 {
       background-size: contain;
       background-repeat: no-repeat;
       margin-left: 110px;
+    }
+  }
+}
+.testimonials {
+  margin: 280px 0 230px;
+
+  p {
+    padding-bottom: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 23.94px;
+    color: #5e6282;
+  }
+  .testimonialsWrapper {
+    display: flex;
+    gap: 109px;
+    align-items: start;
+    .testimonialsLeft {
+      max-width: 544px;
+      display: flex;
+      align-items: center;
+      gap: 109px;
+      h2 {
+        font-family: Volkhov;
+        font-weight: 700;
+        font-size: 66.51px;
+        line-height: 100%;
+        text-transform: capitalize;
+        color: #14183e;
+      }
+    }
+    .testimonialsRight {
+      max-width: 725px;
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      .arrowContainer {
+        width: 19px;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        gap: 76px;
+        .topArrow {
+          width: 18.62px;
+          height: 10px;
+          background-image: url(../assents/topArrow.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .bottomArrow {
+          width: 18.62px;
+          height: 11px;
+          background-image: url(../assents/bottomArrow.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      .textContainer {
+        &:hover {
+          box-shadow: 0px 2.46px 4.19px 0px #00000001, 0px 10.84px 8.67px 0px #00000002,
+            0px 26.6px 17.29px 0px #00000003, 0px 51.23px 33.89px 0px #00000003, 0px 86.21px 62.32px 0px #00000004,
+            0px 133.01px 106.41px 0px #00000005;
+          border-radius: 13px;
+          transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+          transform: translateY(-2px);
+        }
+        max-width: 670px;
+        padding: 45px 90px 45px 37px;
+        p {
+          font-family: Poppins;
+          font-weight: 500;
+          font-size: 21.28px;
+          line-height: 42.56px;
+          color: #5e6282;
+        }
+        h5 {
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 23.94px;
+          color: #5e6282;
+          padding: 45px 0 6px;
+        }
+        h6 {
+          font-family: Poppins;
+          font-weight: 500;
+          font-size: 18.62px;
+          color: #5e6282;
+        }
+      }
     }
   }
 }
