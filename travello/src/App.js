@@ -25,7 +25,8 @@ import send from "./assents/send.svg";
 import building from "./assents/building.svg";
 import heart from "./assents/heart.svg";
 
-import Header from "./components/Header";
+import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 
 function App() {
   const arrayObj = [
@@ -41,13 +42,13 @@ function App() {
   const ArrayDestinations = [
     {
       src: kolis,
-      loc: "Rome, Italy",
+      loc: "Rome,Italy",
       cost: "$5,42k",
       way: "10 Days Trip ",
     },
     {
       src: bigben,
-      loc: "London, UK",
+      loc: "London,UK",
       cost: "$4.2k",
       way: "12 Days Trip ",
     },
@@ -161,7 +162,22 @@ function App() {
             </div>
           </div>
         </section>
+        <section className={style.companies}>
+          <div className={style.axon}></div>
+          <div className={style.jetstar}></div>
+          <div className={style.expedia}></div>
+          <div className={style.qantas}></div>
+          <div className={style.alitalia}></div>
+        </section>
+        <section className={style.subscribe}>
+          <div className={style.subscribeWrapper}>
+            <h2>Subscribe to get information, latest news and other interesting offers about Jadoo</h2>
+            <input placeholder="Your email" />
+            <button>Subscribe</button>
+          </div>
+        </section>
       </main>
+      <Footer />
     </>
   );
 }

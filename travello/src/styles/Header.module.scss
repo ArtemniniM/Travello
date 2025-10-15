@@ -32,6 +32,13 @@
       background-color: #fff;
       cursor: pointer;
     }
+    .sign:hover {
+      background-color: #212832;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(33, 40, 50, 0.3);
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
     h6 {
       font-family: Google Sans;
       font-weight: 500;
